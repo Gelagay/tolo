@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="Home.html">Home</a>
+  <a href="mystory.html">Developer Story</a>
+  <a href="resume.html">Resume</a>
+  <a href="Links.html">Links</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div style="padding-left:16px">
+  <h2></h2>
+  <p></p>
+</div>
+<div class="w3-container">
+  <h2></h2>
+
+ 
+<style>
+table {
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+      color: #000000
+}
+
+tr:nth-child(even) {
+    background-color: #808080
+}
+</style>
+</head>
+<body>
+<div style="padding-left:40px">
+<div style="padding-right:40px">
+
+<p>Click the button to sort the table alphabetically, by name:</p>
+<p><button onclick="sortTable()">Sort</button></p>
+
+
+<table id="myTable">
+  <tr>
+    <th>Classmate Name</th>
+    <th>Domain Name</th>
+  </tr>
+  <tr>
+    <td>joanne Gorecki</td>
+    <td><p><a href="http://englishoils.ga">http://englishoils.ga</a></p></td>
+  </tr>
+  <tr>
+    <td>Mulugeta Wannore</td>
+    <td><p><a href="http://mulugetawannore.ga">http://mulugetawannore.ga</a></p></td>
+  </tr>
+  <tr>
+    <td>Naod Ayele</td>
+    <td><p><a href="http://naodayele.ga">http://naodayele.ga</a></p></td>
+  </tr>
+  <tr>
+    <td>Dawit Abera</td>
+    <td><p><a href="http://dawit.gq">http://dawit.gq</a></p></td>
+  </tr>
+  <tr>
+    <td>Sintayehu Mekonnen</td>
+    <td><p><a href="http://sintu.ga">http://sintu.ga</a></p></td>
+  </tr>
+  <tr>
+    <td>Yohannes Bahta</td>
+    <td><p><a href="http://ethioerinews.ga">http://ethioerinews.ga</a></p></td>
+  </tr>
+  <tr>
+    <td>Selamu Otocho</td>
+    <td><p><a href="http://selamu.ga">http://selamu.ga</a></p></td>
+  </tr>
+  <tr>
+    <td>Eyelachew Desta</td>
+    <td><p><a href="http://eyelachew.ga">http://eyelachew.ga</a></p></td>
+  </tr>
+</table>
+</div>
+</div>
+
+<script>
+function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+
+
+  <link href="styles.CSS" rel="stylesheet">
+<style>
+body {
+  background-image: url("abstract1S.jpg");
+  background-position: 50% 50%;
+  background-repeat: repeat;
+}
+</style>
+
+
+
+</body>
+</html>
