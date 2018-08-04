@@ -18,13 +18,13 @@ $(function() {
 
 	$('.top-nav a.nav-btn').click(function(){
 		$(this).closest('.shell').find('ul').stop(true,true).slideToggle()
-		
+
 		$(this).find('span').toggleClass('active')
 		return false;
 	});
 
 	var winW = $(window).width();
-	
+
 	$(window).on('resize', function() {
 		var winW = $(window).width();
 
@@ -44,7 +44,7 @@ $(window).load(function() {
 	}else{
 		$('.top-nav').removeClass('desktop');
 	}
-	
+
 	$('.flexslider').flexslider({
 		animation: "slide",
 		controlsContainer: ".flexslider",
